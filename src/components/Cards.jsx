@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Card({ data }) {
   return (
-    <div className="w-[305px] h-[265px] flex gap-3 flex-col">
+    <div className="w-[225px] h-[215px] 3xl:w-[305px] 3xl:h-[265px] flex gap-3 flex-col">
       <div className="relative">
         <span className="absolute bottom-3 right-3 text-sm bg-gray-900 px-2 py-0.5 z-10">
           {data.videoDuration}
@@ -11,7 +11,7 @@ export default function Card({ data }) {
         <Link to={`/watch/${data.videoId}`}>
           <img
             src={data.videoThumbnail}
-            className="h-[165px] w-[305px] rounded-xl"
+            className="h-[115px] w-[225px] 3xl:h-[165px] 3xl:w-[305px] rounded-xl"
             alt="thumbnail"
           />
         </Link>

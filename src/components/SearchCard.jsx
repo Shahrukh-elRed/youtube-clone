@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function SearchCard({ data }) {
   return (
-    <div className="flex gap-3 pr-[30vh]">
+    <div className="flex 3xl:gap-3 gap-5 pr-[30vh]">
       <div className="relative">
         <span className="absolute bottom-3 right-3 text-sm bg-gray-900 px-2 py-0.5 z-10">
           {data.videoDuration}
@@ -11,7 +11,7 @@ export default function SearchCard({ data }) {
         <Link to={`/watch/${data.videoId}`}>
           <img
             src={data.videoThumbnail}
-            className="h-52 w-96 rounded-xl"
+            className="[h-48] [w-84] 3xl:h-52 3xl:w-96 rounded-xl"
             alt="thumbnail"
           />
         </Link>
